@@ -1,0 +1,59 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Vollkorn', serif; */
+}
+a{
+  text-decoration: none;
+}
+
+
+
+/* SECCION HEADER -  MENÚ Y PRESENTACION DE MARCA */
+.header {
+  /* background-color: #000; */
+  /*background-image: url(img/mercancia.JPG)*/
+  /*url(https://i.postimg.cc/t4mHDsNJ/lauren-mancke-a-OC7-TSLb1o8-unsplash.jpg);*/
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 500px;
+}
+
+.header-menu{
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-flow: row nowrap;
+  height: 80px;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, .5) ;
+
+}
+
+
+.header-menu-navbar{
+  /* background-color: beige; */
+  flex: 1 5 auto;
+  font-size: 10px;
+  background-color: aqua;
+}
+  .header-menu-navbar a{
+      color: white;
+      font-size: 12px;
+      padding: 0 10px;
+      letter-spacing: 2px;
+      font-weight: 300;
+
+  }
+  .header-menu-navbar a:hover{
+      color: rgba(212, 212, 212, 0.884)
+  }
+  .header-menu-navbar i{
+      margin-right: 3px;
+  }
