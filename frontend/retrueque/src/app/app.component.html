@@ -1,6 +1,6 @@
-<body style="background-color: blue;">
+<app-nav></app-nav>
 
-  <app-login ></app-login>
+<button (click)="showPopup = true">Login</button>
+<button (click)="showPopup = false">close</button>
 
-</body>
-
+<app-login *ngIf="showPopup"></app-login>

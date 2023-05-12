@@ -8,9 +8,13 @@ import { Component } from '@angular/core';
 
 export class LoginComponent {
     showPopup = false;
+    usuario="";
+    password="";
 
     login() {
-      console.log("funca");
+        console.log('Usuario:', this.usuario);
+        console.log('Contraseña:', this.password);
+
     }
 
     close() {
