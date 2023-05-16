@@ -10,6 +10,7 @@ import { NavComponent } from './components/nav/nav.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { NavComponent } from './components/nav/nav.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

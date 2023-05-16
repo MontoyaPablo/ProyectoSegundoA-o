@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
-import { OnInit } from '@angular/core';
-import * as AOS from 'aos';
 
-
+import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-nav',
@@ -10,8 +9,8 @@ import * as AOS from 'aos';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
+
   ngOnInit() {
     AOS.init();
   }
 }
-
