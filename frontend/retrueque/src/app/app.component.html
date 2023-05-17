@@ -1,10 +1,9 @@
 <body>
 
+<app-nav>
+  <app-login></app-login>
+</app-nav>
 
-<app-nav></app-nav>
+<router-outlet></router-outlet>
 
-<button (click)="showPopup = true">Login</button>
-<button (click)="showPopup = false">close</button>
-
-<app-login *ngIf="showPopup"></app-login>
 </body>
