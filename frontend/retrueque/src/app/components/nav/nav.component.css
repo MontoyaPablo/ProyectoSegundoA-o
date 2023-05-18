@@ -1,7 +1,7 @@
 /* SECCION HEADER -  MENÚ Y PRESENTACION DE MARCA */
 .header {
   background: #929d79;
-  background-image: -webkit-linear-gradient(hsla(78, 16%, 55%, 0.600), hsla(78, 16%, 55%, 0.600)), url(/src/assets/images/presentacion2.jpg);
+  background-image: -webkit-linear-gradient(hsla(78, 16%, 55%, 0.600), hsla(78, 16%, 55%, 0.600)), ;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -92,7 +92,7 @@
 
 .header-presentation{
   /* background-color: rgba(0, 255, 242, 0.479); */
-  height: 300px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;

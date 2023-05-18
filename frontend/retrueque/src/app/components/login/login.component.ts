@@ -7,19 +7,21 @@ import { Component } from '@angular/core';
 })
 
 export class LoginComponent {
-    showPopup = false;
-    usuario="";
-    password="";
 
-    login() {
-        console.log('Usuario:', this.usuario);
-        console.log('Contraseña:', this.password);
+  mensaje_enlace: String='Ocultar';
 
-    }
+  register={
+    email:'',
+    password:'',
+  }
 
-    close() {
-      this.showPopup = false;
-      console.log("tmb funca");
-    }
+
+  loginOk() {
+    console.log(this.register);
+  }
+  close() {
+    console.log()
+  }
+
 }
 
