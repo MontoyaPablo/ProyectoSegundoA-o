@@ -1,0 +1,138 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:focus{
+  outline: none;
+}
+
+body {
+  background: #c6bfa6;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+/* caja de contenido */
+.contenido {
+  width: 1050px;
+  height: 530;
+  margin: 50px auto;
+  display: flex;
+
+  background: #929D79;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+}
+
+/* info de contacto */
+.info_ {
+  width: 38%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: #929d79;
+  background-image: -webkit-linear-gradient(hsla(78, 16%, 55%, 0.603), hsla(78, 16%, 55%, 0.603)), url(/src/assets/images/presentacion2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.info_ h1{
+  margin-bottom: 60px;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+}
+.info_ .items p:nth-child(1) span{
+  font-size: 30px;
+  margin-right: 10px;
+}
+.info_ .items p:nth-child(2) span{
+  font-size: 50px;
+  margin-right: 10px;
+  margin-left: 4px;
+}
+.info_ .items p:nth-child(3) span{
+  font-size: 50px;
+  margin-right: 10px;
+  margin-left: 4px;
+}
+.info_ .items p{
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 20;
+  margin-bottom: 10px;
+}
+.info_ h1,
+.info_ .items{
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+/* form de mensaje */
+.formulario {
+  width: 62%;
+  padding: 30px 40px;
+}
+.formulario h2{
+  margin-bottom: 60px;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: left;
+  color: #fff;
+}
+
+.formulario .info{
+  display: flex;
+  flex-direction: column;
+  color: transparent;
+}
+
+.formulario .info label{
+  color: #fff;
+  font-weight: 20;
+}
+
+.formulario .info input,
+.formulario .info textarea{
+  width: 100%;
+  padding: 8px 0 5px;
+  margin-bottom: 20px;
+  background: transparent;
+
+  border: none;
+  border-bottom: 2px solid #828b6b;
+
+  font-family: sans-serif;
+  color: #5a5a5a;
+  font-size: 14px;
+  font-weight: 20;
+}
+
+.formulario .info textarea{
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 90px;
+}
+
+.formulario .info input[type="submit"]{
+  width: 180px;
+  background: hsla(47, 22%, 71%, 0.808);
+  padding: 10px;
+  align-self: flex-end;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 16px;
+  font-family: "montserrat";
+  font-weight: 20;
+  cursor: pointer;
+}
