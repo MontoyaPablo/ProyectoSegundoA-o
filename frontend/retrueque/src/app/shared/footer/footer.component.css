@@ -1,0 +1,112 @@
+.footer{
+    background: #929d79;
+    background-image: -webkit-linear-gradient(hsla(78, 16%, 55%, 0.600), hsla(78, 16%, 55%, 0.600)), url(/src/assets/images/presentacion2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 400px;
+    align-items: center;
+}
+
+    .footer li{
+        list-style: none; 
+    }
+
+        .footer ul li a{
+            color: #fff
+        }
+
+/* FOOTER LOGO */
+.footer-logo{
+    /* background-color: #EEE3CB; */
+    flex:1 1 auto;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    .footer-logo h4{
+        font-size: 40px; 
+        font-weight: 500;
+        color: #fff;
+                
+    }
+/* FOOTER ENLACES */
+.footer-enlaces{
+    /* background-color: #EEE3CB; */
+    flex:1 1 auto;
+    height: 300px; 
+    text-align: left; 
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 1px;     
+}
+
+    .footer-enlaces ul{
+        padding-left: 0px; 
+    }
+
+/* FOOTER CONTACTO */
+.footer-contacto{
+    /* background-color: #EEE3CB; */
+    flex:1 1 auto;
+    height: 300px;
+    text-align: left; 
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+    letter-spacing: 1px;      
+}
+
+    .footer-contacto ul{
+        padding-left: 0px;
+    }
+
+        .footer-contacto li a i{
+            margin-right: 10px;
+        }
+
+@media only screen and(max-width: 600px){
+    
+}
+
+        
+@media only screen and (max-width: 768px) {
+    .footer{
+        display: flex;
+        flex-flow: column;
+        height: auto;
+        align-items: center;
+    }
+    
+    .footer-logo{
+        /* background-color: #EEE3CB; */
+        height: 90px;
+    }
+    
+    /* FOOTER ENLACES */
+    .footer-enlaces{
+        /* background-color: #EEE3CB; */
+        height: 200px; 
+        text-align: center;       
+    }
+    
+    /* FOOTER CONTACTO */
+    .footer-contacto{
+        /* background-color: #EEE3CB; */
+        height: 220px;
+        text-align: center; 
+        padding-bottom: 30px;
+        padding-top: 20px;
+         
+    }
+
+}

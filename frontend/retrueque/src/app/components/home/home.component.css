@@ -1,0 +1,149 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Vollkorn', serif; */
+}
+
+a {
+  text-decoration: none;
+}
+
+/* CONTENEDOR PADRE DE LA WEB */
+.container {
+  max-width: 1400px;
+  /*border: 1px solid #000; Marcamos margenes de pagina con una border */
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.margen-interno {
+  padding: 0 50px;
+}
+
+
+
+.seccion-productos {
+
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.seccion-catalogo {
+  /* background-color: #f7f7f7; */
+  display: flex;
+  flex-flow: row wrap;
+  flex: auto;
+}
+
+.seccion-catalogo-producto {
+  /* background-color: #B4CDE6; */
+  flex: 1 1 auto;
+  /* Ver tamaño de productos */
+  font-size: 8px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.card {
+  background-color: #EEE3CB;
+  width: 100%;
+  opacity: .8;
+}
+
+
+
+/* Estilos nuevos Menú responsive */
+
+ul.alineado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+img.usuario-login:hover {
+  transition: all ease 250ms;
+  cursor: pointer;
+  opacity: .5;
+}
+
+@media screen and (max-width: 991px) {
+
+ul.alineado {
+  align-items: flex-start;
+  gap: 5px;
+  padding: 5px 0 20px 0;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+
+  /* SECCION BIENVENIDA - SLOGAN MARCA */
+  .seccion-bienvenida {
+      height: 300px;
+  }
+
+  .bienvenida-uno h2 {
+      font-size: 50px;
+      /* line-height: 1.3; */
+      color: #fff;
+      letter-spacing: 5px;
+      font-weight: 700;
+  }
+
+  .bienvenida-dos {
+      color: #fff;
+      font-size: 10px;
+  }
+
+  /* SECCION DOS: Main - SECCION PRODUCTOS */
+  .seccion-productos {
+      background-color: #c6bfa6;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      height: auto;
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+
+  .seccion-catalogo {
+      /* background-color: #f7f7f7; */
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+
+  }
+
+  .seccion-catalogo-producto {
+      /* background-color: #B4CDE6; */
+      flex: 1 1 auto;
+      /* Ver tamaño de productos */
+      font-size: 12px;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+  }
+
+  .card {
+      background-color: #EEE3CB;
+      width: 100%;
+      opacity: .8;
+  }
+
+  .card-body {
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+  }
+}

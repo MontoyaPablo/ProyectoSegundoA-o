@@ -1,0 +1,58 @@
+
+  <div class="container">
+
+    <!-- Menu Header - Contenedor Padre -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg header-menu margen-interno">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse header-menu-navbar" id="navbarToggleExternalContent">
+            <ul class="navbar-nav alineado">
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" routerLink="/">
+                  <i class="fa-solid fa-house"></i>HOME
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="">
+                  <i class="fa-solid fa-users"></i>QUIENES SOMOS
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="">
+                  <i class="fa-solid fa-bolt"></i>PRODUCTOS
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink=""><i
+                    class="fa-solid fa-paper-plane"></i>CONTACTO
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink='/src/app/components/contacto'>
+                  <i class="fa-solid fa-gear"></i>DEVELOPERS
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" (click)="popUp()" >
+                  <i class="fa-solid fa-gear"></i>{{mensaje_enlace}}</a>
+                  <app-login *ngIf="mostrar"></app-login>
+
+                <!-- <a href="./src/pages/loginForm.html">
+                            <img src="src/media/share-2.svg" class="usuario-signup" alt="user-icon" id="user" title="Registrarse">
+                </a> -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-presentation">
+        <h1>RETRUEQUE</h1>
+      </div>
+    </header>

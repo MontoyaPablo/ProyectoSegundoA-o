@@ -1,5 +1,13 @@
-<button class="btn btn-primary"(click)="showPopup = true">Login</button>
-<button class="btn btn-primary" (click)="showPopup = false">close</button>
+<body>
 
-<app-login *ngIf="showPopup"></app-login>
- 
+<app-nav>
+  <app-login></app-login>
+</app-nav>
+
+<app-home></app-home>
+
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>
+
+</body>
