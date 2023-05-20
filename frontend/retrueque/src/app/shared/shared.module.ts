@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavComponent } from './nav/nav.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -11,6 +12,7 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     NavComponent,
     LoginComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { FormsModule } from '@angular/forms';
   ],
   exports:[
     NavComponent,
-    LoginComponent
+    LoginComponent,
+    FooterComponent,
   ]
 })
 export class SharedModule {}
