@@ -4,6 +4,8 @@ import { NavComponent } from './nav/nav.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from '../app-routing.module';
+import { FooterComponent } from './footer/footer.component';
+
 
 
 
@@ -12,6 +14,7 @@ import { AppRoutingModule } from '../app-routing.module';
   declarations: [
     NavComponent,
     LoginComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
@@ -20,7 +23,8 @@ import { AppRoutingModule } from '../app-routing.module';
   ],
   exports:[
     NavComponent,
-    LoginComponent
+    LoginComponent,
+    FooterComponent,
   ]
 })
 export class SharedModule {}
