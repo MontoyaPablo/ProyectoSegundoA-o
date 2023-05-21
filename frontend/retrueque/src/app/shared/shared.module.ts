@@ -4,6 +4,7 @@ import { NavComponent } from './nav/nav.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -17,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     CommonModule,
     FormsModule,
+    AppRoutingModule,
   ],
   exports:[
     NavComponent,

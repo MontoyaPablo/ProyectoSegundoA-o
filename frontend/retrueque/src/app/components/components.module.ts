@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { ProductosComponent } from './productos/productos.component';
 import { QuienessomosComponent } from './quienessomos/quienessomos.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ContactoComponent } from './contacto/contacto.component';
     ContactoComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule,
   ],
   exports: [HomeComponent, ProductosComponent, QuienessomosComponent, ContactoComponent]
 })
