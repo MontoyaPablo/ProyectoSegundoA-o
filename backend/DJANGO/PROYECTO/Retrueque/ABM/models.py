@@ -4,14 +4,15 @@ from django.db import models
 
 class Usuario(models.Model):
     dni = models.IntegerField(primary_key = True)
-    nombre = models.CharField(max_length=100, blank = False)
-    apellido = models.CharField(max_length=100, blank = False)
-    domicilio = models.TextField(max_length=1000, blank = False)
-    ciudad= models.CharField(max_length=100, blank = False)
-    email = models.EmailField(max_length=100, blank = False)
-    provincia = models.CharField(max_length=100, blank = False)
-    cp = models.IntegerField(blank = False)
-    fecha_nac = models.DateField(blank = False)
+    #nombre = models.CharField(max_length=100, blank = False)
+    #apellido = models.CharField(max_length=100, blank = False)
+    #domicilio = models.TextField(max_length=1000, blank = False)
+    #ciudad= models.CharField(max_length=100, blank = False)
+    email = models.EmailField(max_length=80)
+    #provincia = models.CharField(max_length=100, blank = False)
+    #cp = models.IntegerField(blank = False)
+    #fecha_nac = models.DateField(blank = False)
+    password= models.CharField(max_length=30, blank=False, default='admin123')
     class Meta:
         db_table = "Usuario"
         verbose_name = "Usuarios que compran/venden/trocan productos"
@@ -67,10 +68,10 @@ class Producto(models.Model):
     nombre = models.CharField(max_length=100, blank = False)
     descripcion = models.TextField(max_length=1000, blank = False)
     cantidad = models.IntegerField(blank = False, default = 0)
-    id_categoria = models.ForeignKey(Categoria, to_field="id_categoria", on_delete=models.CASCADE)
-    id_estado = models.ForeignKey(Estado, to_field="id_estado", on_delete=models.CASCADE)
-    id_condicion = models.ForeignKey(Condicion, to_field="id_condicion", on_delete=models.CASCADE)
-    id_vendedor = models.ForeignKey(Usuario, to_field="dni", on_delete=models.CASCADE)
+    #id_categoria = models.ForeignKey(Categoria, to_field="id_categoria", on_delete=models.CASCADE)
+    #id_estado = models.ForeignKey(Estado, to_field="id_estado", on_delete=models.CASCADE)
+    #id_condicion = models.ForeignKey(Condicion, to_field="id_condicion", on_delete=models.CASCADE)
+    #id_vendedor = models.ForeignKey(Usuario, to_field="dni", on_delete=models.CASCADE)
     class Meta:
         db_table = "Producto"
         verbose_name = "Productos Publicados"
@@ -84,7 +85,7 @@ class Carrito(models.Model):
     id_carrito = models.AutoField(primary_key = True)
     fecha = models.DateField(blank = False)
     observacion = models.CharField(max_length=100, blank = False, default="Sin Observar")
-    id_comprador = models.ForeignKey(Usuario, to_field="dni", on_delete=models.CASCADE)
+    #id_comprador = models.ForeignKey(Usuario, to_field="dni", on_delete=models.CASCADE)
     class Meta:
         db_table = "Carrito"
         verbose_name = "Datos de la carga de productos"
@@ -125,7 +126,7 @@ class Pedido(models.Model):
     id_pedido = models.AutoField(primary_key = True)
     fecha = models.DateField(blank = False)
     observacion = models.CharField(max_length=100, blank = False, default="Sin Observar")
-    id_comprador = models.ForeignKey(Usuario, to_field="dni", on_delete=models.CASCADE)
+    #id_comprador = models.ForeignKey(Usuario, to_field="dni", on_delete=models.CASCADE)
     total_pago = models.DecimalField(decimal_places = 2, max_digits=10, blank = False)
     id_metodopago = models.ForeignKey(MetodoPago, to_field="id_metodopago", on_delete=models.CASCADE)
     domicilio_envio = models.TextField(max_length=1000, blank=False, default="El mismo domicilio del usuario")
