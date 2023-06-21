@@ -1,27 +1,26 @@
-
-
-
-    <div class="contenedor">
-        <div class="contenedor-foto">
-            <h1 class="nombre-producto">Nombre del producto</h1>
-            <br>
-            <img src="../media/notebook.jpg" alt="Foto del producto que subio el usuario"  width= 300px  height= 200px border-radius=50% >
-        </div>
-        <div class="contenedor-contacto">
-            <h2>Contacto</h2>
-            <a href="/src/pages/formulario-contacto-cliente.html" class="boton-enviar">Enviar Mensaje</a>
-
-        </div>
-    </div>
-
-    <div class="contenedor-descripcion">
-        <h2>Descripcion</h2>
-        <p class="descripcion-producto"></p>
-    </div>
-    <div class="contenedor-intereses">
-        <h2>Intereses</h2>
-    </div>
-
+<div class="container my-5">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Articulo</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let p of listaProductos'>
+            <th scope="row"><img src={{p.imagen}}></th>
+            <td>{{p.nombre}}</td>
+            <td>{{p.descripcion}}<br>Stock: {{p.cantidad}} <br> Precio: $ {{p.precio}}</td>
+            <td>
+                <button type="button" class="btn btn-outline-success">Agregar al carrito</button>
+            </td>
+          </tr>
+         
+        </tbody>
+    </table>
+ </div>
    
     
 
