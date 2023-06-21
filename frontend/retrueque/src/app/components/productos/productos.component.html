@@ -1,0 +1,28 @@
+<div class="container my-5">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Articulo</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let p of listaProductos'>
+            <th scope="row"><img src={{p.imagen}}></th>
+            <td>{{p.nombre}}</td>
+            <td>{{p.descripcion}}<br>Stock: {{p.cantidad}} <br> Precio: $ {{p.precio}}</td>
+            <td>
+                <button type="button" class="btn btn-outline-success">Agregar al carrito</button>
+            </td>
+          </tr>
+         
+        </tbody>
+    </table>
+ </div>
+   
+    
+
+
+
