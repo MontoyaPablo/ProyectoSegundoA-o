@@ -5,6 +5,9 @@ import { ProductosComponent } from './productos/productos.component';
 import { QuienessomosComponent } from './quienessomos/quienessomos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { LoginComponent } from './login/login.component';
+import { RegistroComponent } from './registro/registro.component';
+import { CarritoComponent } from './carrito/carrito.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +15,9 @@ import { AppRoutingModule } from '../app-routing.module';
     ProductosComponent,
     QuienessomosComponent,
     ContactoComponent,
+    LoginComponent,
+    RegistroComponent,
+    CarritoComponent,
   ],
   imports: [
     CommonModule,
