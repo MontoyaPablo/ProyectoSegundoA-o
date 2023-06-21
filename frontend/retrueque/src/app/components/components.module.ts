@@ -8,6 +8,7 @@ import { ProductosComponent } from './productos/productos.component';
 import { QuienessomosComponent } from './quienessomos/quienessomos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormularioRegistroComponent } from './formulario-registro/formulario-registro.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ProductosComponent,
     QuienessomosComponent,
     ContactoComponent,
+    FormularioRegistroComponent,
   ],
   imports: [
     CommonModule,

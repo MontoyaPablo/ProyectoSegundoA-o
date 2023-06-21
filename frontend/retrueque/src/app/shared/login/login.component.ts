@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -8,19 +9,21 @@ import { Component } from '@angular/core';
 
 export class LoginComponent {
 
-  mensaje_enlace: String ='Ocultar';
-
-  register = {
-    email:'',
-    password:'',
+  get email(){
+    return this.formLogin.get('email') as FormControl;
   }
 
-
-  loginOk() {
-    console.log(this.register);
+  get password(){
+    return this.formLogin.get('password') as FormControl;
   }
-  close() {
-    console.log()
+
+  formLogin: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) {
+    this.formLogin = this.formBuilder.group({
+      email: ['', [Validators.required ,Validators.email]],
+      password: ['', [Validators.required]]
+    });
   }
 
 }

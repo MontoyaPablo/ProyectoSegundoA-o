@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder,  FormControl, FormGroup, Validators } from '@angular/forms';
 
 
 @Component({
@@ -18,13 +18,11 @@ export class ContactoComponent {
   }
 
   get asunto(){
-    return this.formContacto.get('asunto');
+    return this.formContacto.get('asunto') as FormControl;
   }
-
   get mensaje(){
-    return this.formContacto.get('mensaje');
+    return this.formContacto.get('mensaje') as FormControl;
   }
-
 
   formContacto: FormGroup;
 

@@ -35,14 +35,14 @@
       <label for="asunto">Asunto </label>
       <input id="asunto" name="asunto" formControlName="asunto">
       <div class="alert alert-danger mt-2"
-        [hidden]="asunto?.valid || asunto?.pristine">
+        [hidden]="asunto.valid || asunto.pristine">
         El asunto es obligatorio
       </div>
 
       <label for="mensaje">Mensaje </label>
       <input id="mensaje" name="mensaje" formControlName="mensaje">
       <div class="alert alert-danger mt-2"
-        [hidden]="mensaje?.valid || mensaje?.pristine">
+        [hidden]="mensaje.valid || mensaje.pristine">
 
 
 
