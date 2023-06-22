@@ -8,6 +8,7 @@ import { QuienessomosComponent } from './components/quienessomos/quienessomos.co
 import { ProductosComponent } from './components/productos/productos.component';
 import { LoginComponent } from './components/login/login.component';
 import { CarritoComponent } from './components/carrito/carrito.component';
+import { RegistroComponent } from './components/registro/registro.component';
 
 
 
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'productos' , component: ProductosComponent},
   { path: 'login' , component: LoginComponent},
   { path: 'carrito' , component: CarritoComponent},
+  { path: 'registro' , component: RegistroComponent}
   ];
 
 
