@@ -10,6 +10,8 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { CarritoComponent } from './carrito/carrito.component';
+import { AppRoutingModule } from '../app-routing.module';
+
 
 
 @NgModule({
