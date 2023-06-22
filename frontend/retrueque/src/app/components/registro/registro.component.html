@@ -1,4 +1,48 @@
-<div class="container my-5">
-    <h1>Registro</h1>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisci porro illum dolores, numquam saepe enim officiis perferendis, ipsam eveniet veritatis! Nisi voluptatem beatae laudantium non repudiandae quis voluptatibus dolor.
-</div>
+<body>
+  <h1 class="titulo">REGISTRO DE CLIENTE</h1>
+  <div class="contenedor">
+
+    <form [formGroup]="formRegistro" class="row g-3" (ngSubmit)="onEnviar($event, usuario)">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Nombre</label>
+        <input type="email" class="form-control" id="inputEmail4" formControlName="nombre" [(ngModel)]="usuario.nombre">
+        <div *ngIf="Nombre?.errors && Nombre?.touched">
+          <p *ngIf="Nombre?.hasError('required')" class="text-danger">El nombre es obligatorio</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Apellido</label>
+        <input type="password" class="form-control" id="inputPassword4" formControlName="apellido" [(ngModel)]="usuario.apellido">
+        <div *ngIf="Apellido?.errors && Apellido?.touched">
+          <p *ngIf="Apellido?.hasError('required')" class="text-danger">El apellido es obligatorio</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" formControlName="email" [(ngModel)]="usuario.email">
+        <div *ngIf="Email?.errors && Email?.touched">
+          <p *ngIf="Email?.hasError('required')" class="text-danger">El email es requerido</p>
+          <p *ngIf="Email?.hasError('email')" class="text-danger">El formato del email debe ser valido</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4" formControlName="password" [(ngModel)]="usuario.password">
+        <div *ngIf="Password?.errors && Email?.touched">
+          <p *ngIf="Password?.hasError('required')" class="text-danger">El password es requerido</p>
+          <p *ngIf="Password?.hasError('minlength')" class="text-danger">El password debe contener 8 o mas caracteres</p>
+        </div>
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Direccion</label>
+        <input type="text" class="form-control" id="inputAddress" formControlName="direccion" [(ngModel)]="usuario.direccion">
+        <div *ngIf="Direccion?.errors && Direccion?.touched">
+          <p *ngIf="Direccion?.hasError('required')" class="text-danger">La direccion es obligatoria</p>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Crear Cuenta</button>
+
+    </form>
+  </div>
+</body>
