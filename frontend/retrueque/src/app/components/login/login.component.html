@@ -1,4 +1,27 @@
-<div class="container my-5">
-    <h1>Login</h1>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisci porro illum dolores, numquam saepe enim officiis perferendis, ipsam eveniet veritatis! Nisi voluptatem beatae laudantium non repudiandae quis voluptatibus dolor.
-</div>
+
+<body>
+  <div class="contenedor">
+    <form [formGroup]="formLogin" class="form-login">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Direccion de E-mail</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          formControlName="email">
+        <div *ngIf="Email?.errors && Email?.touched">
+          <p *ngIf="Email?.hasError('required')" class="text-danger">El email es requerido</p>
+          <p *ngIf="Email?.hasError('email')" class="text-danger">El formato del email debe ser valido</p>
+        </div>
+        <div id="emailHelp" class="form-text">Nunca compartiremos tus datos.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+        <div *ngIf="Password?.errors && Email?.touched">
+          <p *ngIf="Password?.hasError('required')" class="text-danger">El password es requerido</p>
+          <p *ngIf="Password?.hasError('minlength')" class="text-danger">El password debe contener 8 o mas caracteres</p>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Iniciar sesion</button>
+    </form>
+  </div>
+</body>
+
