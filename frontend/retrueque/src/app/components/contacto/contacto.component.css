@@ -124,7 +124,7 @@ body {
   max-height: 90px;
 }
 
-.formulario .info button[type="submit"]{
+.formulario .info input[type="submit"]{
   width: 180px;
   background: hsla(47, 22%, 71%, 0.808);
   padding: 10px;

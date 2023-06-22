@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './shared/login/login.component';
 import { NavComponent } from './shared/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { QuienessomosComponent } from './components/quienessomos/quienessomos.component';
 import { ProductosComponent } from './components/productos/productos.component';
-import { FormularioRegistroComponent } from './components/formulario-registro/formulario-registro.component';
+import { LoginComponent } from './components/login/login.component';
+import { CarritoComponent } from './components/carrito/carrito.component';
+
+
+
 
 const routes: Routes = [
 
@@ -15,7 +18,8 @@ const routes: Routes = [
   { path: 'contacto' , component: ContactoComponent},
   { path : 'quienessomos' , component: QuienessomosComponent},
   { path: 'productos' , component: ProductosComponent},
-  { path: 'formulario-registro', component: FormularioRegistroComponent}
+  { path: 'login' , component: LoginComponent},
+  { path: 'carrito' , component: CarritoComponent},
   ];
 
 

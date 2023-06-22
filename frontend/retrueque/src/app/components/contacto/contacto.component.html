@@ -1,60 +1,33 @@
 <div class="contenido">
 
   <section class="info_">
-    <h1>INFORMACIÓN<br>DE CONTACTO</h1>
+      <h1>INFORMACIÓN<br>DE CONTACTO</h1>
 
-    <section class="items">
-      <p><span class="fa fa-location-dot"></span> Córdoba, Argentina </p>
-      <p><span class="fa fa-mobile"></span> (+54) 9 3513 0741 446 </p>
-      <p><span class="fa fa-envelope"></span>retrueque@gmail.com</p>
-    </section>
+      <section class="items">
+          <p><span class="fa fa-location-dot"></span> Córdoba, Argentina </p>
+          <p><span class="fa fa-mobile"></span> (+54) 9 3513 0741 446 </p>
+          <p><span class="fa fa-envelope"></span>retrueque@gmail.com</p>
+      </section>
   </section>
 
-  <form [formGroup]="formContacto" action="" class="formulario" id="formulario" name="formulario" (ngSubmit)="procesar()">
-    <h2>FORMULARIO DE CONTACTO</h2>
+  <form action="" class="formulario" id="formulario" name="formulario">
+      <h2>FORMULARIO DE CONTACTO</h2>
 
-    <div class="info">
-      <label for="names">Nombre y Apellido </label>
-      <input type="text" id="names" name="names" formControlName="name">
-      <div class="alert alert-danger mt-2" [hidden]="name.valid || name.pristine">
-        El nombre es obligatorio
+      <div class="info">
+          <label for="names">Nombre y Apellido </label>
+          <input type="text" id="names" name="names">
+
+          <label for="email">E-mail </label>
+          <input type="text" id="email" name="email">
+
+          <label for="asunto">Asunto </label>
+          <textarea id="asunto" name="asunto"></textarea>
+
+          <label for="mensaje">Mensaje </label>
+          <textarea id="mensaje" name="mensaje"></textarea>
+
+          <input type="submit" value="ENVIAR" id="btnSend">
       </div>
-
-      <label for="email">E-mail </label>
-      <input type="text" id="email" name="email" formControlName="email">
-      <div class="alert alert-danger mt-2"
-        [hidden]="email.valid || email.pristine">
-        <span *ngIf="email.errors?.['required']">
-          El mensaje es obligatorio
-        </span>
-        <span *ngIf="email.errors?.['email']">
-          El email debe ser valido
-        </span>
-      </div>
-
-      <label for="asunto">Asunto </label>
-      <input id="asunto" name="asunto" formControlName="asunto">
-      <div class="alert alert-danger mt-2"
-        [hidden]="asunto.valid || asunto.pristine">
-        El asunto es obligatorio
-      </div>
-
-      <label for="mensaje">Mensaje </label>
-      <input id="mensaje" name="mensaje" formControlName="mensaje">
-      <div class="alert alert-danger mt-2"
-        [hidden]="mensaje.valid || mensaje.pristine">
-
-
-
-      </div>
-
-      <button type="submit" value="ENVIAR" id="btnSend" [disabled]="formContacto.invalid">
-        Enviar
-      </button>
-
-    </div>
   </form>
 
 </div>
-
-
