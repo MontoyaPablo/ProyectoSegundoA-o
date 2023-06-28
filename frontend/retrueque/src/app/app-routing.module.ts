@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 
 import { RouterModule, Routes } from '@angular/router';
 import { NavComponent } from './shared/nav/nav.component';
+import { NavprivadoComponent } from './components/privado/shared/navprivado/navprivado.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { QuienessomosComponent } from './components/quienessomos/quienessomos.component';
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'productos' , component: ProductosComponent},
   { path: 'login' , component: LoginComponent},
   { path: 'carrito' , component: CarritoComponent},
-  { path: 'registro' , component: RegistroComponent}
+  { path: 'registro' , component: RegistroComponent},
+  { path: 'NavPrivado' , component: NavprivadoComponent }
   ];
 
 

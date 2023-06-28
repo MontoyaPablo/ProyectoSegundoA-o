@@ -11,6 +11,8 @@ import { RegistroComponent } from './registro/registro.component';
 import { CarritoComponent } from './carrito/carrito.component';
 import { AppRoutingModule } from '../app-routing.module';
 
+import { NavprivadoComponent } from './privado/shared/navprivado/navprivado.component';
+
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { AppRoutingModule } from '../app-routing.module';
     LoginComponent,
     RegistroComponent,
     CarritoComponent,
+
+    NavprivadoComponent,
   ],
   imports: [
     CommonModule,
