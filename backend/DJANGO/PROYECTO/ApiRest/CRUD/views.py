@@ -100,7 +100,7 @@ class ProcessPaymentAPIView(APIView):
                 },
             }
 
-            sdk = mercadopago.SDK("")
+            sdk = mercadopago.SDK("TEST-6235583635172323-062823-7f2c1fb3049e7e118118d1fb73e1809e-43467100")
 
             payment_response = sdk.payment().create(payment_data)
 

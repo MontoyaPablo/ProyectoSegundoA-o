@@ -12,6 +12,7 @@ import { CarritoComponent } from './carrito/carrito.component';
 import { AppRoutingModule } from '../app-routing.module';
 
 import { NavprivadoComponent } from './privado/shared/navprivado/navprivado.component';
+import { MercadopagoComponent } from './mercadopago/mercadopago.component';
 
 
 
@@ -26,6 +27,7 @@ import { NavprivadoComponent } from './privado/shared/navprivado/navprivado.comp
     CarritoComponent,
 
     NavprivadoComponent,
+      MercadopagoComponent,
   ],
   imports: [
     CommonModule,

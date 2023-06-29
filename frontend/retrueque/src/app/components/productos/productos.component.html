@@ -12,9 +12,9 @@
           <tr *ngFor='let p of listaProductos'>
             <th scope="row"><img src={{p.imagen}}></th>
             <td>{{p.nombre}}</td>
-            <td>{{p.descripcion}}<br>Stock: {{p.cantidad}} <br> Precio: $ {{p.precio}}</td>
+            <td>{{p.descripcion}}<br>Stock: {{p.stock}} <br> Precio: $ {{p.precio}}</td>
             <td>
-                <button type="button" class="btn btn-outline-success">Agregar al carrito</button>
+                <button type="button"  class="btn btn-success btn-rounded" (click)="addToCart(p)" >Agregar al carrito</button>
             </td>
           </tr>
          
